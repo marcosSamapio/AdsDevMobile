@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Calculadora {
+	public static void main(String[] args) {
+		String valorUm = JOptionPane.showInputDialog("Insira um número:\n");
+		String valorDois = JOptionPane.showInputDialog("Insira outro número:\n");
+		int valorA = parseInt(valorUm);
+		int valorB = parseInt(valorDois);
+		double resultado = 0;
+		
+		resultado = somar(valorA, valorB);
+		
+		System.out.println("A somatória dos números é: " + resultado);		
+	}
+
+	public static int somar(int valorA, int valorB) {
+		return valorA + valorB;
+	}
+	
+	public static int parseInt(String valor) {
+		return Integer.parseInt(valor);
+	}
+}
