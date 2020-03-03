@@ -13,6 +13,12 @@ public class Calculadora {
 		
 		resultado = subtrair(valorA, valorB);
 		System.out.println("A subtracao dos números é: " + resultado);
+		
+		resultado = multiplicar(valorA, valorB);
+		System.out.println("A somatória dos números é: " + resultado);
+		
+		resultado = dividir(valorA, valorB);
+		System.out.println("A subtracao dos números é: " + resultado);
 	}
 
 	public static int somar(int valorA, int valorB) {
@@ -25,6 +31,14 @@ public class Calculadora {
 		} else {
 			return valorB - valorA;
 		}
+	}
+	
+	public static int multiplicar(int valorA, int valorB) {
+		return valorA * valorB;
+	}
+	
+	public static int dividir(int valorA, int valorB) {
+		return valorA / valorB;
 	}
 	
 	public static int parseInt(String valor) {
