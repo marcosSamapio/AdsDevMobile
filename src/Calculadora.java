@@ -1,12 +1,13 @@
 import javax.swing.JOptionPane;
 
 public class Calculadora {
+	private static double resultado = 0;
+	
 	public static void main(String[] args) {
 		String valorUm = JOptionPane.showInputDialog("Insira um número:\n");
 		String valorDois = JOptionPane.showInputDialog("Insira outro número:\n");
 		int valorA = parseInt(valorUm);
 		int valorB = parseInt(valorDois);
-		double resultado = 0;
 		
 		resultado = somar(valorA, valorB);
 		System.out.println("A somatória dos números é: " + resultado);
